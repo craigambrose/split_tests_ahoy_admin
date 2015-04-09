@@ -1,0 +1,15 @@
+%h1 Experiments
+
+- @experiments.each do |experiment|
+  .experiment.well
+    %h2= experiment.name
+    %table
+      %thead
+        %tr
+          %th Alternative
+          %th Participants
+      %tbody
+        - experiment.alternatives.each do |alternative|
+          %tr
+            %td= alternative.name
+            %td= alternative.participant_count
