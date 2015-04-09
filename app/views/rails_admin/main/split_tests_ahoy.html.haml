@@ -1,0 +1,3 @@
+- @experiments = SplitTestsAhoy::Experiment.all
+- @experiments.each &:load_configuration
+= render template: '/split_tests_ahoy_admin/experiments/index'

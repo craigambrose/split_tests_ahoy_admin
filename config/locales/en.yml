@@ -1,0 +1,7 @@
+en:
+  admin:
+    actions:
+      split_tests_ahoy:
+        menu: Experiments
+        breadcrumb: Experiments
+        title: Experiments
