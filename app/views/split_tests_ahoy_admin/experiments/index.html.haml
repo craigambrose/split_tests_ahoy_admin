@@ -6,8 +6,12 @@
         %tr
           %th Alternative
           %th Participants
+          %th Conversions
+          %th Population
       %tbody
         - experiment.alternatives.each do |alternative|
           %tr
             %td= alternative.name
             %td= alternative.participant_count
+            %td= alternative.conversions_at
+            %td= alternative.population_at
